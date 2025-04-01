@@ -1,0 +1,15 @@
+[package]
+name = "rust_lib_onnxruntime_example"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+anyhow = "1.0.97"
+flutter_rust_bridge = "=2.9.0"
+tokenizers = { version = "0.21.1", features=["http"] }
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(frb_expand)'] }
