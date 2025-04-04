@@ -1,4 +1,4 @@
 # onnxruntime_example
 
 ## notes 
-* improve later with batched embeddings 
+* little example on using rust bindings in flutter
